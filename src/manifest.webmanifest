@@ -3,6 +3,7 @@
     "short_name": "AngularPWA",
     "description": "A simple Progressive Web App built with Angular",
     "start_url": "/",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#1976D2",
