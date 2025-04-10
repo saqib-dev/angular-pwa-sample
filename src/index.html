@@ -1,17 +1,29 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyPwaApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976D2">
-  <meta name="mobile-web-app-capable" content="yes">
-  
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>MyPwaApp</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#1976D2">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Enable standalone mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Status bar color -->
+    <meta name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent">
+
+    <!-- App title for home screen -->
+    <meta name="apple-mobile-web-app-title" content="My PWA App">
+
+    <!-- iOS icons -->
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>
