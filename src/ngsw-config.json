@@ -1,30 +1,44 @@
 {
-    "index": "/index.html",
-    "assetGroups": [
-      {
-        "name": "app",
-        "installMode": "prefetch",
-        "updateMode": "prefetch",
-        "resources": {
-          "files": [
-            "/index.html",
-            "/favicon.ico",
-            "/manifest.webmanifest",
-            "/assets/**/*"
-          ]
-        }
-      },
-      {
-        "name": "runtime",
-        "installMode": "lazy",
-        "updateMode": "lazy",
-        "resources": {
-          "urls": [
-            "/*.js",
-            "/*.css"
-          ]
-        }
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ]
       }
-    ]
-  }
-  
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "lazy",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(png|jpg|jpeg|svg|webp)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-calls",
+      "urls": [
+        "/api/**"
+      ],
+      "cacheConfig": {
+        "maxSize": 50,
+        "maxAge": "1h",
+        "timeout": "10s",
+        "strategy": "performance"
+      }
+    }
+  ]
+}
